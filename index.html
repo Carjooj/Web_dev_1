@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, metatados, comentários, layout, listas">
     <!--Fim dos metadados-->
-    <title>Aulas web dev 1</title>
+    <title>Aulas web dev 1</title> 
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header> <!--Início da página,logo, etc-->
-        <a href="index.html" title="Voltar ao início"><img src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
+    <header class="flex-container" id="topo"> <!--Início da página,logo, etc-->
+        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
         
 
 
     </header>
-    <nav> <!--Menu de navegação-->
-        <ul> <!--Lista não ordenada-->
+    <nav class="flex-container"> <!--Menu de navegação-->
+        <ul class="menu"> <!--Lista não ordenada-->
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
@@ -37,7 +38,7 @@
             
         </ul>
     </nav> <!--Menu de navegação para o conteúdo do site-->
-    <main>
+    <main class="flex-container" id="conteudo">
         <h1>DESENVOLVIMENTO WEB 1</h1> <!--Titulo e subtitulo-->
         <h2>Contéudos</h2>
 
@@ -51,7 +52,7 @@
         </ol>
     </main>
 
-    <footer> <!--Rodafoot-->
+    <footer class="flex-container" id="rodape"> <!--Rodafoot-->
         <p>Desenvolvimento por Carjooj<br>
             Todos os direitos reservados&copy; 2022
 

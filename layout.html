@@ -8,20 +8,21 @@
     <meta name="keywords" content="html, metatados, comentários, layout, listas">
     <!--Fim dos metadados-->
     <title>Aulas web dev 1</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header> <!--Primeiro elemento visual da página, com o logotipo e afins-->
-        <a href="index.html" title="Voltar ao início"><img src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
+    <header class="flex-container" id="topo"> <!--Primeiro elemento visual da página, com o logotipo e afins-->
+        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
         
 
 
     </header>
-    <nav>
-        <ul> <!-- Contéudo da página com os links de navegação para outras páginas do site-->
+    <nav class="flex-container">
+        <ul class="menu"> <!-- Contéudo da página com os links de navegação para outras páginas do site-->
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
-            <li><a href="javascrip:void(0);"></a>
+            <li><a href="javascrip:void(0);">Listas</a>
                 <ul>
                     <li> <a href="ol.html">Lista ordenada</a></li>
                     <li> <a href="ul.html">Lista não ordenada</a></li>
@@ -36,7 +37,7 @@
             
         </ul>
     </nav>
-    <main> <!--Conteúdo principal da página-->
+    <main class="flex-container" id="conteudo"> <!--Conteúdo principal da página-->
         <h1>LAYOUT</h1>
         <p>Layout é o que define como os elementos da página são dispostos na mesma. Os elementos semânticos que compõem o layout de uma pagina HTML são:</p>
         <ul>
@@ -48,7 +49,7 @@
             <li><b>&lt;footer&gt;</b> : Define um rodapé para o documento ou seção</li>
 
         </ul>
-        <img src="imagem/imagem/layout.png" alt="Imagem contendo instruções para listas não ordenadas" >
+        <img class="imagem" src="imagem/imagem/layout.png" alt="Imagem contendo instruções para listas não ordenadas" >
 
         </p>
 
@@ -56,7 +57,7 @@
 
     </main>
 
-    <footer> <!--Rodafoot-->
+    <footer class="flex-container" id="rodape"> <!--Rodafoot-->
         <p>Desenvolvimento por Carjooj<br>
             Todos os direitos reservados&copy; 2022
 

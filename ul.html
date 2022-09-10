@@ -8,20 +8,21 @@
     <meta name="keywords" content="html, metatados, comentários, layout, listas">
     <!--Fim dos metadados-->
     <title>Aulas web dev 1</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" title="Voltar ao início"><img src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
+    <header class="flex-container" id="topo">
+        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
         
 
 
     </header>
-    <nav> <!--Menu princpal de navegção com as páginas do site disponíveis-->
-        <ul>
+    <nav class="flex-container"> <!--Menu princpal de navegção com as páginas do site disponíveis-->
+        <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
-            <li><a href="javascrip:void(0);"></a>
+            <li><a href="javascrip:void(0);">Listas</a>
                 <ul> <!--Submenu de navegação criado com lista dentro de lista (não ordenadas)-->
                     <li> <a href="ol.html">Lista ordenada</a></li>
                     <li> <a href="ul.html">Lista não ordenada</a></li>
@@ -36,11 +37,11 @@
             
         </ul>
     </nav>
-    <main> <!--Corpo da página com o conteúdo da mesma-->
+    <main class="flex-container" id="conteudo"> <!--Corpo da página com o conteúdo da mesma-->
         <h1>LISTA ORDENADA</h1>
         <p>Uma lista não ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;.</p> <!-- &lt; e &gt; == < e > sem comandos HTML-->
         <p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:</p>
-        <img src="imagem/imagem/ul.png" alt="Imagem contendo instruções para listas não ordenadas" >
+        <img class="imagem" src="imagem/imagem/ul.png" alt="Imagem contendo instruções para listas não ordenadas" >
 
         </p>
 
@@ -48,7 +49,7 @@
 
     </main>
 
-    <footer> <!--Rodafoot-->
+    <footer class="flex-container" id="rodape"> <!--Rodafoot-->
         <p>Desenvolvimento por Carjooj<br> <!--quebra de linha-->
             Todos os direitos reservados&copy; 2022
 

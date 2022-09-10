@@ -8,20 +8,21 @@
     <meta name="keywords" content="html, metatados, comentários, layout, listas">
     <!--Fim dos metadados-->
     <title>Aulas web dev 1</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" title="Voltar ao início"><img src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
+    <header class="flex-container" id="topo">
+        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
         
 
 
     </header>
-    <nav>
-        <ul><!--Navegação inicial do site, podendo acessar outras páginas do site-->
+    <nav class="flex-container">
+        <ul class="menu"><!--Navegação inicial do site, podendo acessar outras páginas do site-->
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
-            <li><a href="javascrip:void(0);"></a>
+            <li><a href="javascrip:void(0);">Listas</a>
                 <ul>
                     <li> <a href="ol.html">Lista ordenada</a></li>
                     <li> <a href="ul.html">Lista não ordenada</a></li>
@@ -36,11 +37,11 @@
             
         </ul>
     </nav>
-    <main> <!--Corpo Principal da página, com o conteúdo-->
+    <main class="flex-container" id="conteudo"> <!--Corpo Principal da página, com o conteúdo-->
         <h1>METADADOS</h1>
         <p>Metadados são dados externos à página são usados pelos navegadores (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chaves) e outros serviços da web;</p>
         <p>Eles são integrados à pagina HTML pela tag &lt;meta&gt;</p> <!--"&lt;" e "&gt;" são usados para inserir "<" e ">" no site sem ativar um comando HTML-->
-        <img src="imagem/imagem/metadados.png" alt="Imagem contendo instruções html para metadados" >
+        <img class="imagem" src="imagem/imagem/metadados.png" alt="Imagem contendo instruções html para metadados" >
 
         </p>
 
@@ -48,7 +49,7 @@
 
     </main>
 
-    <footer> <!--Rodafoot-->
+    <footer class="flex-container" id="rodape"> <!--Rodafoot-->
         <p>Desenvolvimento por Carjooj<br> <!--"br" breakline, quebra de linha no p (paragrafo)-->
             Todos os direitos reservados&copy; 2022
 
