@@ -93,6 +93,46 @@ nav{
     padding: 2% 5%;
 }
 
+/* Formulário */
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+label{
+    font-size: 0.75em;
+}
+legend{
+    font-size: 0.9em;
+    border-style: unset;
+}
+
+input, select, textarea{
+    padding: 8px;
+    border-radius: 10px;
+    width: 60%;
+    border-color: rgb(0, 0, 0);
+}
+fieldset{
+    text-align: center;
+    width: 60%;
+    border-style: solid;
+    padding: 40px;
+}
+
+button{
+    width: 30%;
+    padding: 10px;
+}
+
+.required::after{
+    content: " *";
+    color: red;
+
+}
+
 #rodape{
     justify-content: center;
     text-align: center;
