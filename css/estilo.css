@@ -160,3 +160,14 @@ button{
     align-items: center;
     height: 80px;
 }
+
+video, iframe{
+    width: 90%;
+    height: 640px;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+audio{
+    padding-left: 30px;
+}
