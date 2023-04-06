@@ -1,13 +1,13 @@
 $(document).ready(function(){
     let fonte = 14
-    $('#aumenta').click(function(){
-        if (fonte < 25){
-            $('body').css({'fonte-size': ++fonte + 'px'})
+    $('#fontemais').click(function(){
+        if(fonte<25){
+            $('body').css({'font-size': ++fonte +'px'})
         }
     })
-    $('diminui').click(function(){
-        if (fonte > 14){
-            $('body').css({'font=size': --fonte + 'px'})
+    $('#fontemenos').click(function(){
+        if(fonte>14){
+            $('body').css({'font-size': --fonte +'px'})
         }
     })
 })

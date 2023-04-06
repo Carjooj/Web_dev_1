@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-<head> 
+
+<head>
     <!--Metadados-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, metatados, comentários, layout, listas">
     <!--Fim dos metadados-->
-    <title>Aulas web dev 1</title> 
+    <title>Aulas web dev 1</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="imagem/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Barra de Acessibilidade!-->
     <div class="acessibilidade flex-container">
@@ -22,25 +26,26 @@
         <ul class="links_access">
             <li><a href="acessibilidade.html">Acessibilidade</a></li>
             <li><a href="javascrip:void(0);" id="contraste">Contraste</a></li>
-            <li><a href="javascrip:void(0);" id="semcontraste">Sem contraste</a></li>
+            <li><a href="javascrip:void(0);" id="semcontraste">Sem Contraste</a></li>
             <li><a href="javascrip:void(0);" id="fontemais">A+</a></li>
             <li><a href="javascrip:void(0);" id="fontemenos">A-</a></li>
         </ul>
         <!-- fim da Barra de Acessibilidade!-->
     </div>
     <header class="flex-container" id="topo"> <!--Início da página,logo, etc-->
-        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
+        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png"
+                alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
 
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+        </script>
     </header>
     <nav class="flex-container"> <!--Menu de navegação-->
         <label for="bt_menu"><img src="imagem/imagem/menu.png" alt="Menu"></label>
@@ -50,42 +55,46 @@
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
             <li><a href="javascrip:void(0);">Listas</a>
-              
+
                 <ul> <!--Submenu de navegação usando lista não ordenada-->
                     <li> <a href="ol.html">Lista ordenada</a></li>
                     <li> <a href="ul.html">Lista não ordenada</a></li>
-                    
+
 
                 </ul>
-            
-            
+
+
             </li>
             <li><a href="layout.html">Layout</a></li>
             <li><a href="contato.html">Fale Conosco</a></li>
-            
+
         </ul>
     </nav> <!--Menu de navegação para o conteúdo do site-->
     <main class="flex-container" id="conteudo">
-        <h1>DESENVOLVIMENTO WEB 1</h1> <!--Titulo e subtitulo-->
-        <audio controls>
-            <source src="audio/obi-wan-hello-there.mp3" type="audio/mp3">
-            Formato não suportado
-        </audio>
-        <h2>Contéudos</h2>
+        <section>
+            <h1>DESENVOLVIMENTO WEB 1</h1> <!--Titulo e subtitulo-->
+            <audio controls>
+                <source src="audio/obi-wan-hello-there.mp3" type="audio/mp3">
+                Formato não suportado
+            </audio>
+            <h2>Contéudos</h2>
 
-        <ol> <!--Lista ordenada (que tem números)-->
-            <li>Comentários</li>
-            <li>Metadados</li>
-            <li>Listas</li>
-            <li>Layout</li>
+            <ol> <!--Lista ordenada (que tem números)-->
+                <li>Comentários</li>
+                <li>Metadados</li>
+                <li>Listas</li>
+                <li>Layout</li>
 
 
-        </ol>
-        <iframe src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--<video controls>
+            </ol>
+            <video controls>
+                <source src="video/video.mp4" type="video/mp4">
+                Não suportado
+            </video>
+            <!--<video controls>
             <source src="video/video.mp4" type="video/mp4">
         </video>->-->
-
+        </section>
     </main>
 
     <footer class="flex-container" id="rodape"> <!--Rodafoot-->
@@ -99,4 +108,6 @@
     </footer>
 </body>
 <script src="js/contraste.js"></script>
+<script src="js/fonte.js"></script>
+
 </html>

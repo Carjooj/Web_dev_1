@@ -104,7 +104,6 @@ label[for="bt_menu"], #bt_menu{
 
 /* conteúdo */
 #conteudo{
-    padding-left: 5px;
     min-height: 800px;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
@@ -193,10 +192,9 @@ button{
 
 }
 
-iframe{
-    padding-top: 10px;
-    width: 80%;
-    height: 600px;
+video{
+    width: 60%;
+    height: auto;
     align-self: center;
 }
 

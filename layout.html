@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-br">
+
 <head>
     <!--Metadados-->
     <meta charset="UTF-8">
@@ -10,7 +11,10 @@
     <title>Aulas web dev 1</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="imagem/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Barra de Acessibilidade!-->
     <div class="acessibilidade flex-container">
@@ -27,20 +31,21 @@
             <li><a href="javascrip:void(0);" id="fontemenos">A-</a></li>
         </ul>
     </div>
-        <!-- fim da Barra de Acessibilidade!-->
+    <!-- fim da Barra de Acessibilidade!-->
     <header class="flex-container" id="topo"> <!--Primeiro elemento visual da página, com o logotipo e afins-->
-        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png" alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
+        <a href="index.html" title="Voltar ao início"><img class="imagem" src="imagem/imagem/FATEC_ZONA_LESTE.png"
+                alt="Logo da fatec zona leste nas cores cinza e vermelho"> </a>
 
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+        </script>
     </header>
     <nav class="flex-container">
         <ul class="menu"> <!-- Contéudo da página com os links de navegação para outras páginas do site-->
@@ -51,40 +56,43 @@
                 <ul>
                     <li> <a href="ol.html">Lista ordenada</a></li>
                     <li> <a href="ul.html">Lista não ordenada</a></li>
-                    
+
 
                 </ul>
-            
-            
+
+
             </li>
             <li><a href="layout.html">Layout</a></li>
             <li><a href="contato.html">Fale Conosco</a></li>
-            
-            
+
+
         </ul>
     </nav>
     <main class="flex-container" id="conteudo"> <!--Conteúdo principal da página-->
-        <ul class="breadcrumb">
-            <li><a href="index.html">Início</a></li>
-            <li>Layout</li>
-        </ul>
-        <h1>LAYOUT</h1>
-        <p>Layout é o que define como os elementos da página são dispostos na mesma. Os elementos semânticos que compõem o layout de uma pagina HTML são:</p>
-        <ul id="layout">
-            <li><b>&lt;header&gt;</b> : Define um cabeçalho para um documento ou seção </li>
-            <li><b>&lt;nav&gt;</b> : Define um contêiner para links de navegação</li>
-            <li><b>&lt;section&gt;</b> : Define uma seção de um documento</li>
-            <li><b>&lt;article&gt;</b> : Define um artigo independente</li>
-            <li><b>&lt;aside&gt;</b> : Define um conteúdo além do conteúdo (como uma barra lateral)</li>
-            <li><b>&lt;footer&gt;</b> : Define um rodapé para o documento ou seção</li>
+        <section>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li>Layout</li>
+            </ul>
+            <h1>LAYOUT</h1>
+            <p>Layout é o que define como os elementos da página são dispostos na mesma. Os elementos semânticos que
+                compõem o layout de uma pagina HTML são:</p>
+            <ul id="layout">
+                <li><b>&lt;header&gt;</b> : Define um cabeçalho para um documento ou seção </li>
+                <li><b>&lt;nav&gt;</b> : Define um contêiner para links de navegação</li>
+                <li><b>&lt;section&gt;</b> : Define uma seção de um documento</li>
+                <li><b>&lt;article&gt;</b> : Define um artigo independente</li>
+                <li><b>&lt;aside&gt;</b> : Define um conteúdo além do conteúdo (como uma barra lateral)</li>
+                <li><b>&lt;footer&gt;</b> : Define um rodapé para o documento ou seção</li>
 
-        </ul>
-        <img class="imagem" src="imagem/imagem/layout.png" alt="Imagem contendo instruções para listas não ordenadas" >
+            </ul>
+            <img class="imagem" src="imagem/imagem/layout.png"
+                alt="Imagem contendo instruções para listas não ordenadas">
 
-        </p>
+            </p>
 
 
-
+        </section>
     </main>
 
     <footer class="flex-container" id="rodape"> <!--Rodafoot-->
@@ -98,4 +106,6 @@
     </footer>
 </body>
 <script src="js/contraste.js"></script>
+<script src="js/fonte.js"></script>
+
 </html>
